@@ -1,0 +1,18 @@
+<body>
+
+<div class="login-container">
+    <div class="logo">Instagram</div>
+    <div class="demo"> Login Page</div>
+
+    <form method="post">
+        <input type="text" name="username" placeholder="Phone number, email or username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+    </form>
+
+    {% if msg %}
+    <div class="msg">{{ msg }}</div>
+    {% endif %}
+</div>
+
+</body>
